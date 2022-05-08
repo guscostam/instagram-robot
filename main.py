@@ -47,11 +47,13 @@ while True:
         webdriver.implicitly_wait(30)
         sleep(2)
 
-        webdriver.find_element_by_xpath('/html/body/div[6]/div[3]/div/article/div/div[2]/div/div/div[2]/section[1]/span[1]/button').click()
+        primeiro_like = webdriver.find_element_by_xpath('/html/body/div[6]/div[3]/div/article/div/div[2]/div/div/div[2]/section[1]/span[1]/button')
+        primeiro_like.click()
         webdriver.implicitly_wait(30)
         sleep(2)
 
-        webdriver.find_element_by_xpath('/html/body/div[6]/div[2]/div/div/button').click()
+        primeira_seta_direita = webdriver.find_element_by_xpath('/html/body/div[6]/div[2]/div/div/button')
+        primeira_seta_direita.click()
         webdriver.implicitly_wait(30)
         sleep(3)
 
@@ -62,7 +64,8 @@ while True:
             botao_like.click()
             sleep(3)
                 
-            webdriver.find_element_by_xpath('/html/body/div[6]/div[2]/div/div[2]/button').click()
+            seta_direita = webdriver.find_element_by_xpath('/html/body/div[6]/div[2]/div/div[2]/button')
+            seta_direita.click()
             sleep(2)
 
     janela.close()
